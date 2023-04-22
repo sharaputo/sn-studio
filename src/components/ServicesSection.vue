@@ -1,5 +1,5 @@
 <template>
-  <section class="services">
+  <section class="services" id="services">
     <AppContainer>
       <SectionTitle title="Услуги" />
 
@@ -191,6 +191,10 @@
   @media @xlarge-min {
     .services {
       padding: 120px 0;
+
+      &__list {
+        margin-top: 50px;
+      }
 
       .service {
         display: grid;

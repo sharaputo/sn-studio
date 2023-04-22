@@ -1,5 +1,5 @@
 <template>
-  <section class="about section-padding">
+  <section class="about section-padding" id="about">
     <AppContainer>
       <div class="about__content">
         <SectionTitle title="О нас" />

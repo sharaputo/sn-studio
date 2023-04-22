@@ -62,19 +62,23 @@
 
 <script setup lang="ts">
   import { ref } from 'vue';
+  import { lockBody, unlockBody } from '@/composables/useBodyLock';
   import LogoIcon from '@/components/icons/LogoIcon.vue';
 
   const isMenuOpened = ref(false);
   const handleMenu = () => {
     isMenuOpened.value = !isMenuOpened.value;
-    document.body.style.position = isMenuOpened.value ? 'fixed' : '';
 
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    if (isMenuOpened.value) {
+      lockBody();
+    } else {
+      unlockBody();
+    }
   };
   const closeMenu = () => {
     isMenuOpened.value = false;
-    document.body.style.position = '';
+
+    unlockBody();
   };
 </script>
 

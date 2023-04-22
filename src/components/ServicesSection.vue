@@ -152,13 +152,9 @@
       padding-top: 20px;
       border-top: 1px solid @silver-chalice;
 
-      &__header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
       &__title {
         font-size: 20px;
+        line-height: 95%;
         letter-spacing: -0.05em;
         text-transform: uppercase;
       }
@@ -175,6 +171,11 @@
   @media @xlarge-max {
     .services {
       .service {
+        &__header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
         &__description {
           margin-top: 20px;
         }
@@ -190,6 +191,33 @@
   @media @xlarge-min {
     .services {
       padding: 120px 0;
+
+      .service {
+        display: grid;
+        grid-template-columns: 29.4vw 459px 1fr;
+        gap: 20px;
+        padding-top: 22px;
+
+        &__header {
+          display: grid;
+          gap: 20px;
+        }
+        &__title {
+          font-size: 30px;
+        }
+        &__description {
+          font-size: 16px;
+        }
+        &__footer {
+          display: grid;
+          gap: 29px;
+          text-align: right;
+          margin-left: auto;
+        }
+        &__days {
+          font-size: 16px;
+        }
+      }
     }
   }
 </style>

@@ -58,6 +58,15 @@
     }
   }
 
+  body.locked {
+    position: fixed;
+    top: var(--scroll-y);
+    right: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
   .letter-spacing {
     letter-spacing: -0.03em;
   }

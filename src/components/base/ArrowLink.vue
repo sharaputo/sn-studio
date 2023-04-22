@@ -22,6 +22,7 @@
 <style lang="less" scoped>
   .arrow-link {
     position: relative;
+    height: 24px;
     display: inline-grid;
     grid-template-columns: 9px 1fr;
     align-items: center;

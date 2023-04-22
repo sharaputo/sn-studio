@@ -57,7 +57,7 @@
     &__links {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      column-gap: 27vw;
+      column-gap: 20px;
       row-gap: 25px;
     }
     &__btn {

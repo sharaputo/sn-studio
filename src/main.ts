@@ -1,4 +1,5 @@
 import { createApp } from 'vue';
+import { router } from '@/router';
 
 // Styles
 import '@/assets/css/style.css';
@@ -11,8 +12,9 @@ import SectionTitle from '@/components/base/SectionTitle.vue';
 // Plugins
 
 const app = createApp(App);
+app.use(router);
 
 app.component('AppContainer', AppContainer);
 app.component('SectionTitle', SectionTitle);
 
-app.mount('#app');
+router.isReady().then(() => app.mount('#app'));

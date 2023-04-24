@@ -2,13 +2,7 @@
   <TheHeader />
 
   <main class="main">
-    <HeroSection />
-    <AboutSection />
-    <PortfolioSection />
-    <ServicesSection />
-    <TeamSection />
-    <InstagramSection />
-    <ContactsSection />
+    <RouterView :key="$route.path" />
   </main>
 
   <TheFooter />
@@ -19,13 +13,6 @@
 
   // Components
   import TheHeader from '@/components/TheHeader.vue';
-  import HeroSection from '@/components/HeroSection.vue';
-  import AboutSection from '@/components/AboutSection.vue';
-  import PortfolioSection from '@/components/PortfolioSection.vue';
-  import ServicesSection from '@/components/ServicesSection.vue';
-  import TeamSection from '@/components/TeamSection.vue';
-  import InstagramSection from '@/components/InstagramSection.vue';
-  import ContactsSection from '@/components/ContactsSection.vue';
   import TheFooter from '@/components/TheFooter.vue';
 
   const setWindowHeight = () => {

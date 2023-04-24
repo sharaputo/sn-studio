@@ -35,11 +35,11 @@
 
     &__button {
       text-decoration: underline;
-      color: @white;
+      color: @text-light;
     }
     &__list {
-      color: @black;
-      background-color: @white;
+      color: @text-primary;
+      background-color: @bg-primary;
       padding: 15px;
     }
     &__item {

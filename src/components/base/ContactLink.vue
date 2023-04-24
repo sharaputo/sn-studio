@@ -25,7 +25,7 @@
     font-size: 20px;
     line-height: 135%;
     text-transform: uppercase;
-    color: @white;
+    color: @text-light;
     padding-bottom: 5px;
     transition: color @anim-slow;
 
@@ -37,7 +37,7 @@
       left: 0;
       width: 100%;
       height: 2px;
-      background-color: @white;
+      background-color: @bg-primary;
       transition: background-color @anim-slow;
     }
 

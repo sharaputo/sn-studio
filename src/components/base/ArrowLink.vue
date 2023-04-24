@@ -29,7 +29,7 @@
     gap: 7px;
     font-size: 14px;
     text-transform: uppercase;
-    color: @black;
+    color: @text-primary;
 
     svg {
       width: 9px;
@@ -43,18 +43,18 @@
       left: 0;
       width: 100%;
       height: 1px;
-      background-color: @black;
+      background-color: @bg-secondary;
       transition: background-color @anim-slow;
     }
   }
 
   .arrow-link--white {
-    color: @white;
+    color: @text-light;
     svg {
       fill: @white;
     }
     &::after {
-      background-color: @white;
+      background-color: @bg-primary;
     }
   }
 </style>

@@ -35,7 +35,7 @@
     padding-top: 39px;
 
     &__name {
-      color: @dove-gray;
+      color: @text-secondary;
     }
     &__title {
       font-size: 21px;
@@ -45,7 +45,7 @@
     &__subtitle {
       max-width: 238px;
       font-size: 13px;
-      color: @dove-gray;
+      color: @text-secondary;
       margin: 20px auto 0;
     }
     &__link {

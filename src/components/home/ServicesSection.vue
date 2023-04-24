@@ -137,8 +137,8 @@
 
 <style lang="less" scoped>
   .services {
-    color: @white;
-    background-color: @black;
+    color: @text-light;
+    background-color: @bg-secondary;
     padding: 80px 0;
 
     &__list {
@@ -148,7 +148,7 @@
     }
 
     .service {
-      color: @white;
+      color: @text-light;
       padding-top: 20px;
       border-top: 1px solid @silver-chalice;
 
@@ -159,7 +159,7 @@
         text-transform: uppercase;
       }
       &__description {
-        color: @silver-chalice;
+        color: @text-light-darker;
       }
       &__days {
         font-size: 15px;

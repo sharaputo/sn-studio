@@ -58,7 +58,7 @@
         border-bottom: 1px solid @black;
       }
       &__occupation {
-        color: @dove-gray;
+        color: @text-secondary;
         margin-top: 8px;
       }
     }

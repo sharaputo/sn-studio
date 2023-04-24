@@ -112,7 +112,7 @@
         &__link {
           font-size: 20px;
           text-transform: uppercase;
-          color: @black;
+          color: @text-primary;
           transition: color 0.3s ease-in-out;
         }
       }
@@ -124,7 +124,7 @@
       }
       .contact {
         font-size: 14px;
-        color: @black;
+        color: @text-primary;
         text-transform: uppercase;
         text-decoration: underline;
         transition: color @anim-slow;
@@ -140,7 +140,7 @@
       .line {
         width: 100%;
         height: 2px;
-        background-color: @black;
+        background-color: @bg-secondary;
         transform: translateY(0px);
         transition: transform @anim-slow;
       }
@@ -170,7 +170,7 @@
         flex-direction: column;
         opacity: 0;
         padding: 160px 15px 30px;
-        background-color: @white;
+        background-color: @bg-primary;
         transform: scale(0.9);
         transition: opacity @anim-fast, transform @anim-fast;
         overflow: auto;

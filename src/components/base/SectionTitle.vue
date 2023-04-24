@@ -18,7 +18,7 @@
     line-height: 95%;
 
     &.white {
-      color: @white;
+      color: @text-light;
     }
 
     @media @xlarge-min {

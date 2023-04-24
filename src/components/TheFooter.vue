@@ -23,7 +23,7 @@
 
 <style lang="less" scoped>
   .footer {
-    background: @black;
+    background: @bg-secondary;
 
     &__body {
       display: flex;
@@ -35,7 +35,7 @@
     }
     &__name {
       font-size: 15px;
-      color: @white;
+      color: @text-light;
     }
     &__top {
       display: grid;
@@ -43,7 +43,7 @@
       align-items: center;
       gap: 10px;
       font-size: 15px;
-      color: @white;
+      color: @text-light;
       transition: color @anim-slow;
 
       svg {

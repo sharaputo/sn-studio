@@ -31,7 +31,7 @@
     &__text {
       display: grid;
       gap: 20px;
-      color: @dove-gray;
+      color: @text-secondary;
     }
   }
 

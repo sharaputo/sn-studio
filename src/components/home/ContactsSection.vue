@@ -46,7 +46,7 @@
 
 <style lang="less" scoped>
   .contacts {
-    background-color: @black;
+    background-color: @bg-secondary;
     padding: 75px 0;
 
     &__body {
@@ -66,8 +66,8 @@
       font-size: 18px;
       text-align: center;
       text-transform: uppercase;
-      color: @white;
-      background: @black;
+      color: @text-light;
+      background: @bg-secondary;
       padding: 32px 0;
       border: 1px solid @white;
       border-radius: 78px;

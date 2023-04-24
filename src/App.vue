@@ -55,7 +55,7 @@
   }
 
   .letter-spacing {
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
   }
   .section-padding {
     padding: 40px 0;

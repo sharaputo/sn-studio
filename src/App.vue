@@ -2,7 +2,7 @@
   <TheHeader />
 
   <main class="main">
-    <RouterView :key="$route.path" />
+    <RouterView />
   </main>
 
   <TheFooter />

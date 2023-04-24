@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div>Taplink content</div>
 </template>
 
 <script lang="ts" setup></script>

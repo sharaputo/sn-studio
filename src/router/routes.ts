@@ -12,7 +12,7 @@ export default [
         component: () => import('@/components/home/TaplinkTab.vue'),
       },
       {
-        path: 'tilda',
+        path: '',
         name: 'tilda',
         component: () => import('@/components/home/TildaTab.vue'),
       },

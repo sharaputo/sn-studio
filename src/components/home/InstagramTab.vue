@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div>Instagram content</div>
 </template>
 
 <script lang="ts" setup></script>

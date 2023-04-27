@@ -18,7 +18,9 @@
       </div>
 
       <div class="portfolio__content">
-        <RouterView />
+        <Transition>
+          <RouterView />
+        </Transition>
       </div>
     </AppContainer>
   </section>
@@ -55,6 +57,31 @@
     }
     &__content {
       margin-top: 30px;
+    }
+  }
+
+  .v-enter-active {
+    animation: appear @anim-slowest;
+  }
+  .v-leave-active {
+    animation: disappear @anim-slow;
+  }
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes disappear {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 

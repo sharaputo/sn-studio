@@ -1,6 +1,6 @@
 <template>
-  <div class="tilda-grid">
-    <div class="tilda-grid__column">
+  <div class="masonry-grid">
+    <div class="masonry-grid__column">
       <PortfolioCard
         v-for="(item, i) in leftColumn"
         :key="i"
@@ -9,7 +9,7 @@
         :url="item.url" />
     </div>
 
-    <div class="tilda-grid__column">
+    <div class="masonry-grid__column">
       <PortfolioCard
         v-for="(item, i) in centerColumn"
         :key="i"
@@ -18,7 +18,7 @@
         :url="item.url" />
     </div>
 
-    <div class="tilda-grid__column">
+    <div class="masonry-grid__column">
       <PortfolioCard
         v-for="(item, i) in rightColumn"
         :key="i"
@@ -53,7 +53,7 @@
   const centerColumn = ref([
     {
       image: './assets/images/portfolio/tilda/tilda-04.jpg',
-      title: 'Сайт для бюро архитектуры и дизайна ',
+      title: 'Сайт для бюро архитектуры и дизайна',
       url: 'https://azorskaya.ru/en',
     },
     {
@@ -63,7 +63,7 @@
     },
     {
       image: './assets/images/portfolio/tilda/tilda-06.jpg',
-      title: 'Сайт для студии нестандартных тортов ',
+      title: 'Сайт для студии нестандартных тортов',
       url: 'https://artandsweets.ru/',
     },
   ]);
@@ -82,7 +82,7 @@
 </script>
 
 <style lang="less" scoped>
-  .tilda-grid {
+  .masonry-grid {
     display: grid;
     gap: 35px;
 
@@ -93,7 +93,7 @@
   }
 
   @media @xlarge-min {
-    .tilda-grid {
+    .masonry-grid {
       grid-template-columns: repeat(3, 1fr);
       align-items: start;
       column-gap: 25px;

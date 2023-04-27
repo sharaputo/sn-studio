@@ -10,6 +10,7 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@vueuse/motion": "2.0.0-beta.12",
     "vue": "^3.2.41",
     "vue-easy-lightbox": "^1.16.0",
     "vue-router": "^4.1.6"

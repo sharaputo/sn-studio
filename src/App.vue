@@ -61,9 +61,37 @@
     padding: 40px 0;
   }
 
+  @media @xlarge-max {
+    .vel-btns-wrapper {
+      position: absolute !important;
+      bottom: 10px;
+      right: 10px;
+      left: 10px;
+      display: grid;
+      grid-template-columns: 37px 37px;
+      justify-content: end;
+      gap: 10px;
+    }
+    .btn__close {
+      display: none !important;
+    }
+    .vel-toolbar {
+      display: none !important;
+    }
+  }
   @media @xlarge-min {
     .section-padding {
       padding: 60px 0;
+    }
+    .lightbox-arrow {
+      position: absolute;
+      top: calc(50% - 17px);
+    }
+    .lightbox-arrow--prev {
+      left: 20px;
+    }
+    .lightbox-arrow--next {
+      right: 20px;
     }
   }
 </style>

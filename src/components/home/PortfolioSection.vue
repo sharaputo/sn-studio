@@ -18,9 +18,11 @@
       </div>
 
       <div class="portfolio__content">
-        <Transition>
-          <RouterView />
-        </Transition>
+        <Router-view v-slot="{ Component }">
+          <transition>
+            <component :is="Component" />
+          </transition>
+        </Router-view>
       </div>
     </AppContainer>
   </section>

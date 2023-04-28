@@ -4,7 +4,7 @@
       <PortfolioCard
         v-for="(item, i) in leftColumn"
         :key="i"
-        :image="item.image"
+        :src="item.src"
         :title="item.title"
         :url="item.url" />
     </div>
@@ -13,7 +13,7 @@
       <PortfolioCard
         v-for="(item, i) in centerColumn"
         :key="i"
-        :image="item.image"
+        :src="item.src"
         :title="item.title"
         :url="item.url" />
     </div>
@@ -22,7 +22,7 @@
       <PortfolioCard
         v-for="(item, i) in rightColumn"
         :key="i"
-        :image="item.image"
+        :src="item.src"
         :title="item.title"
         :url="item.url" />
     </div>
@@ -35,31 +35,31 @@
 
   const leftColumn = ref([
     {
-      image: './assets/images/portfolio/taplink/taplink-01.jpg',
+      src: '/assets/images/portfolio/taplink/taplink-01.jpg',
       title: 'Таплинк для психолога',
       url: 'https://taplink.cc/site/p/a138a1/',
     },
     {
-      image: './assets/images/portfolio/taplink/taplink-02.jpg',
+      src: '/assets/images/portfolio/taplink/taplink-02.jpg',
       title: 'Таплинк для женских курсов',
       url: 'https://taplink.cc/site/p/a156cb/',
     },
   ]);
   const centerColumn = ref([
     {
-      image: './assets/images/portfolio/taplink/taplink-03.jpg',
+      src: '/assets/images/portfolio/taplink/taplink-03.jpg',
       title: 'Таплинк для крипто эксперта',
       url: 'https://taplink.cc/site/p/a17687/',
     },
     {
-      image: './assets/images/portfolio/taplink/taplink-04.jpg',
+      src: '/assets/images/portfolio/taplink/taplink-04.jpg',
       title: 'Таплинк для дизайнера интерьера',
       url: 'https://taplink.cc/innaazorskaya',
     },
   ]);
   const rightColumn = ref([
     {
-      image: './assets/images/portfolio/taplink/taplink-05.jpg',
+      src: '/assets/images/portfolio/taplink/taplink-05.jpg',
       title: 'Таплинк для бренда одежды',
       url: 'https://taplink.cc/site/p/a234b9/',
     },

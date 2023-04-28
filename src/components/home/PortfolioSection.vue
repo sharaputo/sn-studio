@@ -20,7 +20,9 @@
       <div class="portfolio__content">
         <Router-view v-slot="{ Component }">
           <transition>
-            <component :is="Component" />
+            <KeepAlive>
+              <component :is="Component" />
+            </KeepAlive>
           </transition>
         </Router-view>
       </div>

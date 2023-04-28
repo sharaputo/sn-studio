@@ -11,7 +11,6 @@
 <script setup lang="ts">
   import { onMounted } from 'vue';
 
-  // Components
   import TheHeader from '@/components/TheHeader.vue';
   import TheFooter from '@/components/TheFooter.vue';
 
@@ -59,6 +58,24 @@
   }
   .section-padding {
     padding: 40px 0;
+  }
+  .animated {
+    overflow: hidden;
+
+    img {
+      display: block;
+      transform: scale(1);
+      transition: transform @anim-slowest, filter @anim-slowest;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        img {
+          filter: blur(2px);
+          transform: scale(1.05);
+        }
+      }
+    }
   }
 
   @media @xlarge-max {

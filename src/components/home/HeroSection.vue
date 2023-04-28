@@ -13,20 +13,34 @@
       Обсудить проект
     </ArrowLink>
 
-    <div class="hero__images">
-      <img
-        src="@/assets/images/hero/hero-01.jpg"
-        alt="сайты на экране мобильного" />
-      <img src="@/assets/images/hero/hero-02.jpg" alt="экран сайта на пк" />
-      <img
-        src="@/assets/images/hero/hero-03.jpg"
-        alt="сетка постов в инстаграмм" />
+    <div class="hero__images mobile">
+      <img src="/assets/images/hero/hero-02.jpg" alt="" />
+      <img src="/assets/images/hero/hero-03.jpg" alt="" />
+    </div>
+
+    <div class="hero__images desktop">
+      <HeroImage v-for="(image, i) in images" :key="i" :src="image.src" />
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
+  import { ref } from 'vue';
+
   import ArrowLink from '@/components/base/ArrowLink.vue';
+  import HeroImage from '@/components/HeroImage.vue';
+
+  const images = ref([
+    {
+      src: '/assets/images/hero/hero-01.jpg',
+    },
+    {
+      src: '/assets/images/hero/hero-02.jpg',
+    },
+    {
+      src: '/assets/images/hero/hero-03.jpg',
+    },
+  ]);
 </script>
 
 <style lang="less" scoped>
@@ -61,10 +75,8 @@
 
   @media @large-max {
     .hero {
-      &__images {
-        img:first-child {
-          display: none;
-        }
+      &__images.desktop {
+        display: none;
       }
     }
   }
@@ -85,6 +97,9 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 13px;
         margin-top: 88px;
+        &.mobile {
+          display: none;
+        }
       }
     }
   }

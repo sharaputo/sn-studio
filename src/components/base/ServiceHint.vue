@@ -1,6 +1,11 @@
 <template>
-  <div class="service-hint">
-    <button type="button" class="service-hint__button" @click="toggleHint">
+  <div :class="['service-hint', isActive]">
+    <button
+      type="button"
+      class="service-hint__button"
+      @click.prevent="onHintClick"
+      @mouseenter="onHintHover"
+      @mouseleave="onHintHover">
       Что входит
     </button>
 
@@ -15,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue';
+  import { ref, computed } from 'vue';
 
   interface Props {
     list: string[];
@@ -26,6 +31,24 @@
   const toggleHint = () => {
     isHintShown.value = !isHintShown.value;
   };
+
+  const desktopRes = window.matchMedia('(min-width: 1200px)');
+  const mousePointer = window.matchMedia('(pointer: fine)');
+  const touchPointer = window.matchMedia('(pointer: coarse)');
+  const onHintClick = () => {
+    if (!desktopRes.matches && touchPointer.matches) {
+      toggleHint();
+    }
+  };
+  const onHintHover = () => {
+    if (desktopRes.matches && mousePointer.matches) {
+      toggleHint();
+    }
+  };
+
+  const isActive = computed(() => ({
+    'service-hint--active': isHintShown.value,
+  }));
 </script>
 
 <style lang="less" scoped>
@@ -34,13 +57,16 @@
     z-index: 10;
 
     &__button {
+      position: relative;
       text-decoration: underline;
       color: @text-light;
+      z-index: 1;
     }
     &__list {
       color: @text-primary;
       background-color: @bg-primary;
       padding: 15px;
+      z-index: 20;
     }
     &__item {
       font-size: 15px;
@@ -48,6 +74,10 @@
         content: '–';
         padding-right: 5px;
       }
+    }
+
+    &--active {
+      z-index: 20;
     }
   }
 
@@ -79,6 +109,8 @@
   }
   @media @large-min {
     .service-hint {
+      filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.25));
+
       &__button {
         font-size: 16px;
       }

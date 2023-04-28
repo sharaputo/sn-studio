@@ -1,7 +1,7 @@
 <template>
   <article class="portfolio-card">
-    <div class="portfolio-card__image" @click.prevent="showLightbox">
-      <img :src="image" :alt="title" />
+    <div class="portfolio-card__image animated" @click.prevent="showLightbox">
+      <img :src="src" :alt="title" />
     </div>
 
     <button
@@ -52,7 +52,7 @@
   import LightboxArrow from '@/components/icons/LightboxArrow.vue';
 
   interface Props {
-    image: string;
+    src: string;
     title: string;
     lightboxImages: string[];
   }
@@ -61,7 +61,6 @@
 
   // Lighbox related logic
   const isLightboxVisible = ref(false);
-
   const showLightbox = () => {
     isLightboxVisible.value = true;
   };

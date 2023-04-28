@@ -1,7 +1,7 @@
 <template>
   <article class="portfolio-card">
-    <a :href="url" class="portfolio-card__image" target="_blank">
-      <img :src="image" :alt="title" />
+    <a :href="url" class="portfolio-card__image animated" target="_blank">
+      <img :src="src" :alt="title" />
     </a>
 
     <a :href="url" class="portfolio-card__title letter-spacing" target="_blank">
@@ -18,7 +18,7 @@
   import ArrowIcon from '@/components/icons/ArrowIcon.vue';
 
   interface Props {
-    image: string;
+    src: string;
     title: string;
     url: string;
   }

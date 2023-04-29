@@ -7,7 +7,7 @@
     <div class="instagram__content">
       <a
         href="https://www.instagram.com/p/CYgmTuXgqQD/"
-        class="instagram__link"
+        class="instagram__link animated"
         target="_blank">
         <img
           src="@/assets/images/instagram/instagram-01.jpg"
@@ -15,7 +15,7 @@
       </a>
       <a
         href="https://www.instagram.com/p/CgBu05hjsnC/"
-        class="instagram__link"
+        class="instagram__link animated"
         target="_blank">
         <img
           src="@/assets/images/instagram/instagram-02.jpg"
@@ -23,7 +23,7 @@
       </a>
       <a
         href="https://www.instagram.com/p/Ckpry_NjMFX/"
-        class="instagram__link"
+        class="instagram__link animated"
         target="_blank">
         <img
           src="@/assets/images/instagram/instagram-03.jpg"
@@ -31,7 +31,7 @@
       </a>
       <a
         href="https://www.instagram.com/p/CmV8uUrjy1S/"
-        class="instagram__link"
+        class="instagram__link animated"
         target="_blank">
         <img
           src="@/assets/images/instagram/instagram-04.jpg"

@@ -39,7 +39,7 @@
     background-color: @white;
     overflow-x: hidden;
 
-    @media screen and (min-width: 1200px) {
+    @media @xlarge-min {
       font-size: 15px;
     }
   }
@@ -68,10 +68,10 @@
       transition: transform @anim-slowest, filter @anim-slowest;
     }
 
-    @media (hover: hover) {
+    @media @hover {
       &:hover {
         img {
-          filter: blur(2px);
+          filter: blur(1px);
           transform: scale(1.05);
         }
       }

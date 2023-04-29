@@ -27,7 +27,7 @@
     text-transform: uppercase;
     color: @text-light;
     padding-bottom: 5px;
-    transition: color @anim-slow;
+    overflow: hidden;
 
     &::after {
       display: block;
@@ -38,18 +38,25 @@
       width: 100%;
       height: 2px;
       background-color: @bg-primary;
-      transition: background-color @anim-slow;
+      transition: transform @anim-slow;
     }
 
     svg {
       width: 100%;
       fill: @white;
-      transition: fill @anim-slow;
     }
 
     @media @xlarge-min {
       grid-template-columns: 18px 1fr;
       font-size: 30px;
+    }
+  }
+
+  @media @hover {
+    .contact-link:hover {
+      &::after {
+        transform: translateX(-105%);
+      }
     }
   }
 </style>

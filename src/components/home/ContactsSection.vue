@@ -108,4 +108,13 @@
       }
     }
   }
+
+  @media @hover {
+    .contacts {
+      &__btn:hover {
+        color: @black;
+        background-color: @text-light;
+      }
+    }
+  }
 </style>

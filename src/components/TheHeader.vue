@@ -216,4 +216,23 @@
       }
     }
   }
+
+  @media @hover {
+    .header {
+      &__nav {
+        .nav {
+          &__link {
+            &:hover {
+              color: @text-secondary;
+            }
+          }
+        }
+        .contact {
+          &:hover {
+            color: @text-secondary;
+          }
+        }
+      }
+    }
+  }
 </style>

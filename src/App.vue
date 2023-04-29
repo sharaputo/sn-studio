@@ -59,24 +59,6 @@
   .section-padding {
     padding: 40px 0;
   }
-  .animated {
-    overflow: hidden;
-
-    img {
-      display: block;
-      transform: scale(1);
-      transition: transform @anim-slowest, filter @anim-slowest;
-    }
-
-    @media @hover {
-      &:hover {
-        img {
-          filter: blur(1px);
-          transform: scale(1.05);
-        }
-      }
-    }
-  }
 
   @media @xlarge-max {
     .vel-btns-wrapper {
@@ -109,6 +91,26 @@
     }
     .lightbox-arrow--next {
       right: 20px;
+    }
+  }
+
+  // Hover effects
+  .animated {
+    overflow: hidden;
+
+    img {
+      display: block;
+      transform: scale(1);
+      transition: transform @anim-slowest, filter @anim-slowest;
+    }
+  }
+
+  @media @hover {
+    .animated:hover {
+      img {
+        filter: blur(1px);
+        transform: scale(1.05);
+      }
     }
   }
 </style>

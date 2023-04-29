@@ -3,7 +3,7 @@
     <AppContainer>
       <div class="footer__body">
         <div class="footer__name">&copy; Natalia Semenova {{ year }}</div>
-        <a href="#top" class="footer__top">
+        <a href="#top" class="footer__top bounce">
           <span>Наверх</span>
           <ArrowUpIcon />
         </a>
@@ -44,7 +44,7 @@
       gap: 10px;
       font-size: 15px;
       color: @text-light;
-      transition: color @anim-slow;
+      transition: transform @anim-slow;
 
       svg {
         fill: @white;
@@ -71,6 +71,29 @@
       }
       &__top {
         font-size: 16px;
+      }
+    }
+  }
+
+  @media @hover {
+    .bounce:hover {
+      animation: bounce @anim-long;
+    }
+    @keyframes bounce {
+      0% {
+        transform: translateY(0%);
+      }
+      25% {
+        transform: translateY(-15%);
+      }
+      50% {
+        transform: translateY(0%);
+      }
+      75% {
+        transform: translateY(-15%);
+      }
+      100% {
+        transform: translateY(0%);
       }
     }
   }

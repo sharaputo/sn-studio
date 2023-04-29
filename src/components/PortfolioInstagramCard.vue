@@ -90,6 +90,7 @@
       color: @text-primary;
       padding-bottom: 7px;
       border-bottom: 1px solid @black;
+      transition: color @anim-slow;
     }
   }
 
@@ -100,6 +101,16 @@
       &__title {
         font-size: 16px;
         padding-bottom: 15px;
+      }
+    }
+  }
+
+  @media @hover {
+    .portfolio-card {
+      &__title {
+        &:hover {
+          color: @black-hover;
+        }
       }
     }
   }

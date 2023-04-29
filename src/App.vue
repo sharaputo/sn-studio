@@ -60,6 +60,10 @@
     padding: 40px 0;
   }
 
+  .lightbox-arrow--hidden {
+    display: none;
+  }
+
   @media @xlarge-max {
     .vel-btns-wrapper {
       position: absolute !important;

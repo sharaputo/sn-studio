@@ -28,7 +28,7 @@
     <template v-slot:prev-btn="{ prev }">
       <button
         type="button"
-        class="lightbox-arrow lightbox-arrow--prev"
+        :class="['lightbox-arrow', 'lightbox-arrow--prev', isSingleImage]"
         @click="prev">
         <LightboxArrow style="transform: rotate(180deg)" />
       </button>
@@ -37,7 +37,7 @@
     <template v-slot:next-btn="{ next }">
       <button
         type="button"
-        class="lightbox-arrow lightbox-arrow--next"
+        :class="['lightbox-arrow', 'lightbox-arrow--next', isSingleImage]"
         @click="next">
         <LightboxArrow />
       </button>
@@ -46,7 +46,7 @@
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue';
+  import { ref, computed } from 'vue';
 
   import ArrowIcon from '@/components/icons/ArrowIcon.vue';
   import LightboxArrow from '@/components/icons/LightboxArrow.vue';
@@ -57,7 +57,11 @@
     lightboxImages: string[];
   }
 
-  defineProps<Props>();
+  const props = defineProps<Props>();
+
+  const isSingleImage = computed(() => {
+    return props.lightboxImages.length === 1 ? 'lightbox-arrow--hidden' : '';
+  });
 
   // Lighbox related logic
   const isLightboxVisible = ref(false);

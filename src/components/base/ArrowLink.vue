@@ -30,10 +30,12 @@
     font-size: 14px;
     text-transform: uppercase;
     color: @text-primary;
+    transition: color @anim-slow;
 
     svg {
       width: 9px;
       fill: @black;
+      transition: fill @anim-slow;
     }
     &::after {
       display: block;
@@ -55,6 +57,29 @@
     }
     &::after {
       background-color: @bg-primary;
+    }
+  }
+
+  @media @hover {
+    .arrow-link:hover {
+      color: @black-hover;
+
+      svg {
+        fill: @black-hover;
+      }
+      &::after {
+        background-color: @black-hover;
+      }
+    }
+    .arrow-link--white:hover {
+      color: @white-hover;
+
+      svg {
+        fill: @white-hover;
+      }
+      &::after {
+        background-color: @white-hover;
+      }
     }
   }
 </style>

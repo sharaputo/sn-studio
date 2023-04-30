@@ -30,7 +30,7 @@
         </ul>
 
         <a
-          href="https://www.instagram.com/websmnv/?hl=ru"
+          href="https://www.instagram.com/natalia.semenova.studio/"
           class="contacts__btn"
           target="_blank">
           <span>Связаться</span>

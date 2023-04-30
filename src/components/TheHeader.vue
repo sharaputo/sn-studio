@@ -20,7 +20,7 @@
 
         <div class="contacts">
           <a
-            href="https://www.instagram.com/websmnv/?hl=ru"
+            href="https://instagram.com/natalia.semenova.studio"
             class="contact"
             target="_blank"
             @click="closeMenu">

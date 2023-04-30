@@ -68,7 +68,7 @@
     .vel-btns-wrapper {
       position: absolute !important;
       bottom: 10px;
-      right: 10px;
+      right: 15px;
       left: 10px;
       display: grid;
       grid-template-columns: 37px 37px;

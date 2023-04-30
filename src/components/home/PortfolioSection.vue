@@ -95,6 +95,12 @@
         grid-template-columns: 133px 1fr;
         gap: 57px;
       }
+      &__tabs {
+        grid-template-columns: 97px 80px 197px;
+      }
+      &__link {
+        padding: 9px 0 8px;
+      }
     }
   }
 </style>

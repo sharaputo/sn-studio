@@ -58,6 +58,7 @@
 
     &__button {
       position: relative;
+      font-size: 14px;
       text-decoration: underline;
       color: @text-light;
       z-index: 1;

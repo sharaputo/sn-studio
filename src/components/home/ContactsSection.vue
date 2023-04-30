@@ -12,7 +12,7 @@
           </li>
           <li>
             <ContactLink
-              href="https://www.instagram.com/natalia.semenova.studio/?hl=ru"
+              href="https://instagram.com/natalia.semenova.studio"
               isNewWindow>
               Instagram
             </ContactLink>
